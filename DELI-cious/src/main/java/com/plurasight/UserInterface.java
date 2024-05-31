@@ -17,6 +17,9 @@ public class UserInterface {
                      break;
          }
     }
+
+
+
     public static void orderScreen(){
         System.out.println("Please select from the following");
         System.out.println("(1) Add Sandwich");
@@ -25,26 +28,55 @@ public class UserInterface {
         System.out.println("(4) Add Chips");
         System.out.println("(5) Checkout");
         System.out.println("(6) Cancel Order");
-       try{
-           int selection = scanner.nextInt();
+        try {
+            int selection = scanner.nextInt();
 
-        switch (selection){
-            case 1: addSandwich();
-            break;
-            case 2: SignatureSandwich;
-            break;
-            case 3: addDrink();
-            break;
-            case 4: addChip ();
-            break;
-            case 5: Checkout ();
-            break;
-            case 6: cancelOrder();
-            break;
-            default:
-                System.out.println("Error:Invalid Entry, Please try again");
+            switch (selection) {
+                case 1:
+                    addSandwich();
+                    break;
+                case 2:
+                    SignatureSandwich();
+                    break;
+                case 3:
+                    addDrink();
+                    break;
+                case 4:
+                    addChip();
+                    break;
+                case 5:
+                    Checkout();
+                    break;
+                case 6:
+                    cancelOrder();
+                    break;
+                default:
+                    System.out.println("Error:Invalid Entry, Please try again");
+            }
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
 
-}
-       catch ();
-}
+    }
+
+
+    private static void SignatureSandwich() {
+    }
+
+    private static void cancelOrder() {
+    }
+
+    private static void Checkout() {
+    }
+
+    private static void addChip() {
+    }
+
+    private static void addDrink() {
+    }
+
+    private static void addSandwich() {
+    }
+    private static void exitProgram() {
+    }}
